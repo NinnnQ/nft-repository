@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  color: hsl(215, 51%, 70%);
+
+}
+
+h2{
+  color: white;
+}
+h4{
+  color: hsl(178, 100%, 50%);
+}
+
+.content{
+  background-color: hsl(216, 50%, 16%);
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 5%;
+  -ms-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+   padding:1%;
+   height: 70%;
+   width: 20%;
+
+}
+
+.ethereum{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.container{
+  position: relative;
+  height: auto;
+  width: 100%;
+  height: 60%;
+}
+
+
+.middle{
+  background-color: hsl(178, 100%, 50%);
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.eqbr-img{
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: auto;
+  align-items: center;
+  transition: .5s ease;
+}
+
+.view-img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container:hover .middle{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.creator{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.creator-text{
+  display: flex;
+  flex-direction: row;
+  align-items: space-evenly;
+  padding-left: 5%;
+}
+.titles-to-hover{
+  color: white;
+}
+
+.titles-to-hover:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.avatar{
+  height: 12%;
+  width: 12%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media only screen and (max-height: 800px){
+
+  .content{
+    line-height: 0.7;
+    font-size: auto;
+    height: 85%;
+    width: 70%;
+    padding: 3%;
+  }
+}
